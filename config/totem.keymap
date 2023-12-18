@@ -49,6 +49,17 @@
             key-positions = <10 11>;
             timeout-ms = <120>;
         };
+
+        ecs {
+            bindings = <&kp ESC>;
+            key-positions = <0 1>;
+            timeout-ms = <120>;
+        };
+
+        delete {
+            bindings = <&kp DELETE>;
+            key-positions = <8 9>;
+        };
     };
 
     macros {
