@@ -147,10 +147,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-         &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5    &kp N6      &kp N7          &kp N8           &kp N9           &kp N0
-         &kp LG(LC(A))  &trans        &trans        &trans        &trans    &trans      &trans          &kp UP_ARROW     &trans           &none
-&kp F11  &trans         &trans        &trans        &trans        &trans    &trans      &kp LEFT_ARROW  &kp DOWN_ARROW   &kp RIGHT_ARROW  &trans  &kp F12
-                                      &trans        &trans        &trans    &kp K_MUTE  &kp C_VOL_DN    &kp C_VOLUME_UP
+         &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5    &kp N6  &kp N7          &kp N8           &kp N9           &kp N0
+         &kp LG(LC(A))  &trans        &trans        &trans        &trans    &trans  &trans          &kp UP_ARROW     &trans           &none
+&kp F11  &trans         &trans        &trans        &trans        &trans    &trans  &kp LEFT_ARROW  &kp DOWN_ARROW   &kp RIGHT_ARROW  &trans  &kp F12
+                                      &trans        &trans        &trans    &none   &kp C_VOL_DN    &kp C_VOLUME_UP
             >;
         };
 
