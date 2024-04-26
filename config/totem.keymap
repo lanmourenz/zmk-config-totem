@@ -13,7 +13,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/keys.h>
 
 #define BASE 0
 #define NAV  1
@@ -121,10 +120,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp N1        &kp N2  &kp N3  &kp N4            &kp N5           &kp N6        &kp N7          &kp N8           &kp N9     &kp N0
-        &kp CAPSLOCK  &trans  &trans  &kp C_AC_REFRESH  &kp C_AL_CALC    &kp LBKT      &kp RBKT        &kp MINUS        &kp EQUAL  &trans
-&trans  &trans        &trans  &trans  &trans            &trans           &kp UP_ARROW  &trans          &trans           &trans     &trans  &trans
-                              &trans  &trans            &trans           &kp LEFT      &kp DOWN_ARROW  &kt RIGHT_ARROW
+        &kp N1        &kp N2  &kp N3  &kp N4            &kp N5           &kp N6    &kp N7     &kp N8     &kp N9     &kp N0
+        &kp CAPSLOCK  &trans  &trans  &kp C_AC_REFRESH  &kp C_AL_CALC    &kp LBKT  &kp RBKT   &kp MINUS  &kp EQUAL  &trans
+&trans  &trans        &trans  &trans  &trans            &trans           &trans    &trans     &trans     &trans     &trans  &trans
+                              &trans  &trans            &trans           &kp LEFT  &kp RIGHT  &trans
             >;
         };
 
@@ -147,10 +146,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-         &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5    &kp N6  &kp N7          &kp N8           &kp N9           &kp N0
-         &kp LG(LC(A))  &trans        &trans        &trans        &trans    &trans  &trans          &kp UP_ARROW     &trans           &none
-&kp F11  &trans         &trans        &trans        &trans        &trans    &trans  &kp LEFT_ARROW  &kp DOWN_ARROW   &kp RIGHT_ARROW  &trans  &kp F12
-                                      &trans        &trans        &trans    &none   &kp C_VOL_DN    &kp C_VOLUME_UP
+         &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5    &kp N6             &kp N7           &kp N8          &kp N9           &kp N0
+         &kp LG(LC(A))  &trans        &trans        &trans        &trans    &trans             &trans           &kp UP_ARROW    &trans           &none
+&kp F11  &trans         &trans        &trans        &trans        &trans    &trans             &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &kp F12
+                                      &trans        &trans        &trans    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans
             >;
         };
 
