@@ -81,6 +81,11 @@
             bindings = <&new_macro>;
             key-positions = <0 9>;
         };
+
+        lanyaqiehuan {
+            bindings = <&bt BT_NXT>;
+            key-positions = <16 15>;
+        };
     };
 
     macros {
