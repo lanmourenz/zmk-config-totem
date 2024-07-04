@@ -62,18 +62,6 @@
             timeout-ms = <120>;
         };
 
-        bt0 {
-            bindings = <&bt BT_SEL 0>;
-            key-positions = <3 4>;
-            timeout-ms = <123>;
-        };
-
-        bt1 {
-            bindings = <&bt BT_SEL 1>;
-            key-positions = <5 6>;
-            timeout-ms = <123>;
-        };
-
         btqingchu {
             bindings = <&bt BT_CLR>;
             key-positions = <20 31>;
@@ -83,12 +71,6 @@
         mima {
             bindings = <&new_macro>;
             key-positions = <0 9>;
-            timeout-ms = <123>;
-        };
-
-        lanyaqiehuan {
-            bindings = <&bt BT_NXT>;
-            key-positions = <16 15>;
             timeout-ms = <123>;
         };
     };
@@ -211,10 +193,10 @@
 
         layer_4 {
             bindings = <
-        &kp LG(LC(Q))  &trans  &trans  &trans  &trans    &new_macro  &trans  &trans  &trans  &trans
-        &trans         &trans  &trans  &trans  &trans    &trans      &trans  &trans  &trans  &trans
-&trans  &trans         &trans  &trans  &trans  &trans    &trans      &trans  &trans  &trans  &trans  &trans
-                               &trans  &trans  &trans    &trans      &trans  &trans
+              &kp LG(LC(Q))  &trans  &trans  &trans  &trans    &new_macro  &trans  &trans  &trans  &trans
+              &trans         &trans  &trans  &trans  &trans    &trans      &trans  &trans  &trans  &trans
+&bt BT_SEL 0  &trans         &trans  &trans  &trans  &trans    &trans      &trans  &trans  &trans  &trans  &bt BT_SEL 1
+                                     &trans  &trans  &trans    &trans      &trans  &trans
             >;
         };
 
